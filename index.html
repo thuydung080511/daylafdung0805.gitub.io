@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="lesson8.js"></script>
+    <link ref="stylesheet" href="lesson8.css">
+    <title>Thực hiện phép toán</title>
+</head>
+<body>
+    <h1>Bài 1 : Xây dựng trang Web thực hiện 4 phép tính</h1>
+    <div>
+        <p>Thực hiện 4 phép tính cộng , trừ , nhân , chia</p>
+        <input type="number" id="txtA">
+        <select id="PhepToan">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">×</option>
+            <option value="/">÷</option>
+        </select>
+        <input type="number" id="txtB">
+        <button onclick="TinhToan()">=</button>
+        <input type="number" id="txtKetQua">
+    </div>
+    <h2>Bài 2: Xây dựng trang Web mô phỏng Caculator</h2>
+    <div class = "bai2">
+        <div class="calculator">
+            <div id="display" class="display">0</div>
+            <div class="buttons">
+                <button onclick="clearDisplay()">MC</button>
+                <button onclick="memoryPlus()">M+</button>
+                <button onclick="deleteLast()">←</button>
+                <button class="operator" onclick="operation('/')">÷</button>
+
+                <button onclick="appendNumber('7')">7</button>
+                <button onclick="appendNumber('8')">8</button>
+                <button onclick="appendNumber('9')">9</button>
+                <button class="operator" onclick="operation('*')">×</button>
+
+                <button onclick="appendNumber('4')">4</button>
+                <button onclick="appendNumber('5')">5</button>
+                <button onclick="appendNumber('6')">6</button>
+                <button class="operator" onclick="operation('-')">−</button>
+
+                <button onclick="appendNumber('1')">1</button>
+                <button onclick="appendNumber('2')">2</button>
+                <button onclick="appendNumber('3')">3</button>
+                <button class="operator" onclick="operation('+')">+</button>
+
+                <button class="zero" onclick="appendNumber('0')">0</button>
+                <button onclick="appendDot()">.</button>
+                <button class="equal" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
